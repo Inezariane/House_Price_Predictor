@@ -42,8 +42,8 @@ HomeValueAI is a comprehensive property valuation application that uses machine 
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd home-value-ai
+git clone https://github.com/Inezariane/House_Price_Predictor
+cd House_Price_Predictor
 ```
 
 ### 2. Frontend Setup
@@ -87,7 +87,7 @@ python -m venv venv
 
 # Activate the virtual environment
 # On Windows:
-venv\Scripts\activate
+venv\bin\activate
 # On macOS/Linux:
 source venv/bin/activate
 
@@ -95,11 +95,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-2. Prepare your data:
-   - Replace the sample data in `model_training/data/housing_data_sample.csv` with your real dataset
-   - Rename it to `housing_data.csv`
-
-3. Run the training script:
+2. Run the training script:
 ```bash
 python train_model.py
 ```
@@ -110,33 +106,3 @@ This will:
 - Convert the model to TensorFlow.js format
 - Save the model to the server's directory
 
-## Integration Workflow
-
-1. **Data Collection**: Gather housing price data and save it as a CSV file in the `model_training/data` directory.
-
-2. **Model Training**: Use the Python script to train the model based on your data.
-
-3. **Backend Integration**: The Node.js backend will automatically load the trained model and use it for predictions.
-
-4. **Frontend Usage**: The frontend app will communicate with the backend API to get price predictions.
-
-## Development Notes
-
-- **Model Updates**: Whenever you train a new model, the backend will automatically load the latest version.
-
-- **API Testing**: You can test the API endpoints using tools like Postman or curl.
-
-- **Environment Variables**: In production, consider using environment variables for API URLs and other configurations.
-
-## Deployment
-
-For production deployment:
-
-1. Build the frontend:
-```bash
-npm run build
-```
-
-2. Deploy the backend and frontend to your preferred hosting service.
-
-3. Ensure that the model files are included in your backend deployment.
