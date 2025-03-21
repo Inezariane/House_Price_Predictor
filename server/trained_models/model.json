@@ -1,0 +1,1 @@
+{"features": ["squareFeet", "bedrooms", "bathrooms", "yearBuilt", "lot_size", "oceanProximity_<1H OCEAN", "oceanProximity_NEAR BAY", "oceanProximity_NEAR OCEAN", "propertyType_Villa", "propertyType_Condo", "propertyType_Apartment", "propertyType_House", "has_garage", "has_pool"], "inputShape": [14], "outputShape": [1], "modelVersion": "1.0.0"}
